@@ -26,3 +26,28 @@ sec_returns['BEI.DE'].mean() * 250
 sec_returns['BEI.DE'].std()
 sec_returns['BEI.DE'].std() * 250 ** 0.5
 
+# Covariance and Correlation
+PG_var = sec_returns['PG'].var()
+print(PG_var)
+
+BEI_var = sec_returns['BEI.DE'].var()
+print(BEI_var)
+
+PG_var_a = sec_returns['PG'].var * 250
+
+BEI_var_a = sec_returns['BEI.DE'].var() * 250
+
+
+# Cov
+cov_matrix = sec_returns.cov()
+print(cov_matrix)
+
+cov_matrix_a = sec_returns.cov() * 250
+print(cov_matrix_a)
+
+
+# correlation
+corr_matrix = sec_returns.corr()
+print(corr_matrix)
+
+
