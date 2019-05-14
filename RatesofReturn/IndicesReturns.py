@@ -23,9 +23,13 @@ tickers = ['PG', '^GSPC', '^DJI']
 data_2 = pd.DataFrame()
 
 for t in tickers:
-    data_2[t] = wb.DataReader(t, datasource='yahoo', start='2007-1-1')['Adj Close']
+    data_2[t] = wb.DataReader(t, data_source='yahoo', start='2007-1-1')['Adj Close']
 
 print(data_2.tail())
 
 (data_2 / data_2.iloc[0] * 100).plot(figsize=(15, 6))
 plt.show()
+
+
+
+
