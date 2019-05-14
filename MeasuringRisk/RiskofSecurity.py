@@ -14,3 +14,15 @@ sec_returns = np.log(sec_data / sec_data.shift(1))
 
 print(sec_returns)
 
+# PG
+sec_returns['PG'].mean()
+sec_returns['PG'].mean() * 250
+sec_returns['PG'].std()
+sec_returns['PG'].std() * 250 ** 0.5
+
+# Beierdorf
+sec_returns['BEI.DE'].mean()
+sec_returns['BEI.DE'].mean() * 250
+sec_returns['BEI.DE'].std()
+sec_returns['BEI.DE'].std() * 250 ** 0.5
+
