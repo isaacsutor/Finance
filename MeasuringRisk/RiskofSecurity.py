@@ -51,3 +51,14 @@ corr_matrix = sec_returns.corr()
 print(corr_matrix)
 
 
+# Calculating Portfolio Risk
+weights = np.array([0.5, 0.5])
+
+pfolio_var = np.dot(weights.T, np.dot(sec_returns.cov() * 250, weights))
+print(pfolio_var)
+
+pfolio_vol = (np.dot(weights.T, np.dot(sec_returns.cov() * 250, weights))) ** 0.5
+print(str(round(pfolio_vol, 5) * 100) + ' %')
+
+
+
