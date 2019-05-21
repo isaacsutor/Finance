@@ -8,3 +8,5 @@ print(ser[2])
 # get data on Proctor and Gamble from Yahoo Starting at the date 1/1/1995
 PG = wb.DataReader('PG', data_source='yahoo', start='1995-1-1')
 print(PG)
+
+
